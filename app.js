@@ -42,7 +42,8 @@ app.engine(
 )
 app.set('view engine', '.hbs')
 
-
+//routes
+app.use('/',require('./routes/index') )
 
 const PORT = process.env.PORT || 5000
 
